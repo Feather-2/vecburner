@@ -1,0 +1,54 @@
+{
+  "name": "vecburner",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Just-so-so bitmap to vector graphics engine",
+  "main": "dist/vecburner.cjs.js",
+  "module": "dist/vecburner.esm.js",
+  "browser": "dist/vecburner.umd.js",
+  "types": "dist/vecburner.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/vecburner.esm.js",
+      "require": "./dist/vecburner.cjs.js",
+      "browser": "./dist/vecburner.umd.js"
+    },
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Feather-2/vecburner.git"
+  },
+  "keywords": [
+    "vector",
+    "svg",
+    "bitmap",
+    "trace",
+    "potrace",
+    "vtracer",
+    "vectorize",
+    "image",
+    "graphics"
+  ],
+  "author": "Paper Burner Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Feather-2/vecburner/issues"
+  },
+  "homepage": "https://github.com/Feather-2/vecburner#readme",
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.9.0"
+  }
+}
