@@ -6,7 +6,7 @@ const banner = `/*!
  * https://github.com/Feather-2/vecburner
  * 
  * @license MIT
- * Copyright (c) 2024 Paper Burner Team
+ * Copyright (c) 2025 Paper Burner Team
  */`;
 
 export default [
